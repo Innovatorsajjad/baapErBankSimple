@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>banking.html</title>
+</head>
+<body>
+    <header class="text-center mt-16">
+        <h1 class="text-4xl ">Let's get some<span class="font-semibold text-purple-700">Mooooooney</span>!!!</h1>
+    </header>
+    
+    <main class="w-3/4 mx-auto">
+        <section class="">
+                <div class="text-white mt-16 grid grid-cols-3 gap-4">
+                    <div class="bg-lime-400 rounded p-8 ">
+                        <h3 class="text-2xl">Deposit</h3>
+                        <h4 class="text-4xl">$<span>00</span></h4>
+                    </div>
+                    <div class="bg-red-400 rounded p-8 ">
+                        <h3 class="text-2xl">Widthrow</h3>
+                        <h4 class="text-4xl">$<span>00</span></h4>
+                    </div>
+                    <div class="bg-yellow-400 rounded p-8 ">
+                        <h3 class="text-2xl">Total Balance</h3>
+                        <h4 class="text-4xl">$<span>00</span></h4>
+                    </div>
+                </div>
+        </section>
+        <!-- Diposit and Widthrow -->
+
+        
+        <section class="w-3/4 mx-auto grid grid-cols-2 gap-4 mt-16">
+            <div class="gap-4 bg-lime-400  mt-8 px-8 py-6 rounded">            
+                <h3 class="text-2xl">Please Diposit Here...</h3>
+                <input  type="text" id="Deposite-amount" class="block w-2/5 my-4 rounded px-2" placeholder="$ Amount">
+                <button id="" class="bg-blue-500 px-4 py-1 rounded text-white">Diposit</button></div>
+            <div class="gap-4 bg-red-400  mt-8 px-8 py-6 rounded">
+                <h3 class="text-2xl">Please Widthrow Here...</h3>
+                <input  type="text" id="Widthro-amount" class="block w-2/5 my-4 rounded px-2" placeholder="$ Amount">
+                <button id="" class="bg-blue-500 px-4 py-1 rounded text-white">Widthrow</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/bank.js"></script>
+</body>
+</html>
