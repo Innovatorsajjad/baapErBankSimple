@@ -4,12 +4,13 @@ document.getElementById("deposite-button").addEventListener("click",function(){
     const DepositeAmmountText = DepositeAmmountInput.value;
     const DepositeAmmount = parseFloat(DepositeAmmountText);
     
+    DepositeAmmountInput.value='';
 
     //Cgange Deposite input  ammount........
     const DepositeTotalAmmount = document.getElementById("deposit-total");
     const DepositeTotalAmmountText = DepositeTotalAmmount.innerText;
     const DepositeTotal = parseFloat(DepositeTotalAmmountText);
-    
+
     DepositeTotalAmmount.innerText = DepositeAmmount+DepositeTotal;
 })
 
@@ -18,7 +19,7 @@ document.getElementById("widthrow-button").addEventListener("click",function(){
     const WidthrowAmmountInput = document.getElementById("Widthrow-amount");
     const WidthrowAmmountInputText = WidthrowAmmountInput.value;
     const WidthrowAmmount= parseFloat(WidthrowAmmountInputText)
-
+    WidthrowAmmountInput.value="";
 
      //Change Deposite Input Ammount.................
     const WidthrowTotalInput = document.getElementById("widthrow-total");
