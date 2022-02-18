@@ -1,27 +1,29 @@
-    //Hanle diposite Button event./
-    document.getElementById("deposite-button").addEventListener('click',function(){
-        //get the amount deposited............
-    const inputListener = document.getElementById("deposite-amount");
-    const depositeAmountText= inputListener.value;
-    const depositeAmount = parseFloat(depositeAmountText);
-
-
-    const depositTotal=document.getElementById('deposit-total');
-    const correntDepositeAmountText = depositTotal.innerText;
-    const correntDepositeAmount = parseFloat(correntDepositeAmountText)
-
-    const newDepostTotal=correntDepositeAmount +depositeAmount;
-     depositTotal.innerText = newDepostTotal;
-
-     //update Account Balance...............
-    const BalanceTotal = document.getElementById('Balance-total');
-    const BalanceTotalText = BalanceTotal.innerText;
-    const previousBalanceTotal=parseInt(BalanceTotalText);
-    const newBalanceTotal= previousBalanceTotal+newDepostTotal;
-    BalanceTotal.innerText=newBalanceTotal;
-
-     //clear the deposite input field;
-     depositeAmount.value = '';
-    });
-
+//Handle Deposite Button ....................
+document.getElementById("deposite-button").addEventListener("click",function(){
+    const DepositeAmmountInput = document.getElementById("deposite-amount");
+    const DepositeAmmountText = DepositeAmmountInput.value;
+    const DepositeAmmount = parseFloat(DepositeAmmountText);
     
+
+    //Cgange Deposite input  ammount........
+    const DepositeTotalAmmount = document.getElementById("deposit-total");
+    const DepositeTotalAmmountText = DepositeTotalAmmount.innerText;
+    const DepositeTotal = parseFloat(DepositeTotalAmmountText);
+    
+    DepositeTotalAmmount.innerText = DepositeAmmount+DepositeTotal;
+})
+
+//Handle Widthrow Button..........................................
+document.getElementById("widthrow-button").addEventListener("click",function(){
+    const WidthrowAmmountInput = document.getElementById("Widthrow-amount");
+    const WidthrowAmmountInputText = WidthrowAmmountInput.value;
+    const WidthrowAmmount= parseFloat(WidthrowAmmountInputText)
+
+
+     //Change Deposite Input Ammount.................
+    const WidthrowTotalInput = document.getElementById("widthrow-total");
+    const WidthrowTotalText= WidthrowTotalInput.innerText;
+    const WidthrowTotal = parseFloat(WidthrowTotalText);
+
+    WidthrowTotalInput.innerText = WidthrowAmmount+WidthrowTotal;
+})
